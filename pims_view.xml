@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openerp>
+<data>
+
+<record id="product_pims_form_view" model="ir.ui.view">
+            <field name="name">product.pims.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+           
+                
+                
+                
+                <xpath expr="//page[@string='Accounting']" position="after">
+	               
+	           	    <page string="PIMS">
+                                <group >
+                                	<group>
+	                                   <field name="framework"/> 
+	                                   <field name="schedule"/>
+                                     </group>
+			                         <group> 
+			                           <field name="tag_commisionable"/> 
+			                           <field name="investigation_type"/>
+			                         </group>
+				 				</group>
+                                   <group string="Plumbs Species">
+		                           <group>
+				                           <field name="dogs"/> 
+				                           <field name="cats"/> 
+				                           <field name="horse"/> 
+				                           <field name="cattle"/> 
+				                           <field name="birds"/> 
+				                           <field name="swine"/> 
+		                           </group>
+		                           <group>
+				                           <field name="small_mammals"/> 
+				                           <field name="ferrets"/> 
+				                           <field name="liamas"/> 
+				                           <field name="reptiles"/> 
+				                           <field name="camel_ides"/>  
+				                           <field name="zoo_exotic"/> 
+				                           <field name="goats"/> 
+		                           </group>
+                                    
+                           </group>
+                                
+                      </page>
+	           	  
+                </xpath>
+            </field>
+   		</record>
+
+
+
+   		
+   		
+   		
+
+
+</data></openerp>
+
